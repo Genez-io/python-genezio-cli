@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+genezio_cli/__init__.py
+genezio_cli/install.py
+genezio_cli.egg-info/PKG-INFO
+genezio_cli.egg-info/SOURCES.txt
+genezio_cli.egg-info/dependency_links.txt
+genezio_cli.egg-info/entry_points.txt
+genezio_cli.egg-info/top_level.txt

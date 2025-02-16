@@ -1,0 +1,47 @@
+[project]
+name = "genezio-cli"
+version = "0.1.0"
+description = "Deploy on the fastest full-stack cloud. Experience the autoscaling of near-zero latency serverless without rewriting your code."
+authors = [
+    {name = "Genezio"}
+]
+license = {text = "GNU General Public License v3 (GPLv3)"}
+readme = "README.md"
+requires-python = ">=3.9, <4.0"
+keywords = [
+    "serverless",
+    "full-stack",
+    "fast",
+    "autoscaling",
+    "near-zero-latency",
+    "cloud",
+    "genezio",
+    "genezio-cli"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Genez-io/genezio"
+"Bug Tracker" = "https://github.com/Genez-io/genezio/issues"
+"Documentation" = "https://genezio.com/docs"
+"Source" = "https://github.com/Genez-io/genezio"
+"Changelog" = "https://github.com/Genez-io/genezio/blob/main/CHANGELOG.md"
+
+[project.scripts]
+preinstall = "genezio_cli.install:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "poetry-core>=2.0.0,<3.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.build.targets.wheel]
+packages = ["genezio_cli"]
